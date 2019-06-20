@@ -11,10 +11,19 @@ public class GoofyNames {
 		String goofyName = "";
 
 		// 1. Ask the user to enter their name
+	String name = JOptionPane.showInputDialog("enter your name");
+	
 
 		// 2. Print upper case name to the console using .toUpperCase()
+	System.out.println(name.toUpperCase());
+	System.out.println();
 		//    Run your program to see that this works.
-
+          int length = name.length();
+          for(int i = 0; i < length; i++) {
+        	  String temp = name.substring(i, i+1);
+        			  ;
+        	  System.out.println(temp);
+          }
 		// 3. Loop through each character of the name (steps 4 - 6).
 		//    HINT: Use .length() to determine the number of characters in the String.
 
