@@ -1,10 +1,11 @@
-package _03_goofy_names;
+                                                                                                          package _03_goofy_names;
 /*
  *    Copyright (c) The League of Amazing Programmers 2013-2017
  *    Level 0
  */
 
 import javax.swing.JOptionPane;
+import javax.xml.transform.Templates;
 
 public class GoofyNames {
 	public static void main(String[] args) {
@@ -20,10 +21,16 @@ public class GoofyNames {
 		//    Run your program to see that this works.
           int length = name.length();
           for(int i = 0; i < length; i++) {
-        	  String temp = name.substring(i, i+1);
-        			  ;
-        	  System.out.println(temp);
+        	  String jama = name.substring(i,i+1);
+        	  
+        	  if(i%2==0) {
+        		  goofyName += jama.toUpperCase();
+        	  }
+        	  if(i%2==1) {
+        		  goofyName += jama.toLowerCase();
+        	  }
           }
+         // System.out.println(goofyName);
 		// 3. Loop through each character of the name (steps 4 - 6).
 		//    HINT: Use .length() to determine the number of characters in the String.
 
@@ -39,6 +46,7 @@ public class GoofyNames {
 
 		
 		// 7. Use pop-up to show user their Goofy name
+          JOptionPane.showMessageDialog(null, goofyName);
 
 	}
 }

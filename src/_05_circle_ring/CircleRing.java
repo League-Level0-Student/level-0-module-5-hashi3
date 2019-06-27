@@ -11,6 +11,12 @@ public class CircleRing {
 
         // 1. Make a new Robot
 
+     Robot jama = new Robot();
+     jama.moveTo(150,200);
+     jama.penDown();
+     jama.setSpeed(10);
+     
+     
 
        //  2. Set your robot’s position to x=150 and y=200
 
@@ -19,6 +25,7 @@ public class CircleRing {
         // 4. Set the robot’s speed to 10
 
         // 5. Do everything below here 360 times (use i as the counter)
+     jama.moveTo(3,0);
 
 	        // 6. Move the robot 3 pixels
 
