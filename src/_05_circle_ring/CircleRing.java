@@ -15,18 +15,44 @@ public class CircleRing {
      jama.moveTo(150,200);
      jama.penDown();
      jama.setSpeed(10);
+   //  jama.microMove(1);
      
      
 
        //  2. Set your robot’s position to x=150 and y=200
+    
+     
+     
 
         // 3. Put the robot's pen down
 
         // 4. Set the robot’s speed to 10
 
         // 5. Do everything below here 360 times (use i as the counter)
-     jama.moveTo(3,0);
-
+     int i = 0;
+     while(i <360) {
+    
+    	 jama.move(3);
+    	 jama.turn(1);
+    	 i++;
+    	
+    	 if(i%20 == 0) {
+    		 
+    		 for (int j = 0; j < 360; j++) {
+    			
+    			 jama.move(1);
+     	 		jama.turn(1);
+     	 	
+				
+			}
+    	 		
+    	 }	
+    	 
+     }
+    
+ 	
+     
+     
 	        // 6. Move the robot 3 pixels
 
        //  7. Turn the robot 1 degree
